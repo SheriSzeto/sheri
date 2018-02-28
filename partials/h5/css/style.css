@@ -1,0 +1,131 @@
+html{
+    height: 100%;
+}
+body{
+    margin:0;
+    font-size:16px;
+    position:relative;
+    height: 100%;
+    background: #fff;
+}
+.swiper-container{
+    width:100%;
+    height:100%;
+    color:#000;
+    text-align:center;
+}
+.swiper-slide{
+    overflow: hidden;
+    position: relative;
+}
+.head{
+    background:url(../img/1.jpg) no-repeat center center;
+    background-size:100%;
+    position:relative;
+}
+.n2,.n3{
+    background-color: #ebdacd;
+}
+.n4,.n5{
+    background-color: #f5d1b9;
+}
+.n6,.n7{
+    background-color: #9fc8ce;
+}
+.n8,.n9{
+    background-color: #e4dded;
+}
+.n10,.n11{
+    background-color: #d5e9f0;
+}
+.n12{
+    background: url(../img/12.png) no-repeat center center;
+    background-size:100%;
+}
+.head .info{
+    position: relative;
+    right:-410px;
+    height:30px;
+}
+.info{
+    top:5%;
+    position:relative;
+}
+.info1,.info2,.info3,.info4,.info5{
+    opacity:0;
+}
+/*第二页主体内容距离最上面的距离*/
+.n2 .info1,.n3 .info1,.n4 .info1{
+    margin-top:6%;
+}
+.n2 .info2,.n4 .info2{
+    margin-top:10%;
+}
+.n3 .info2{
+    margin-top:12%;
+}
+.n5 .info3,.n6 .info3{
+    margin-top:3%;
+}
+.n6 .info2,.n8 .info2{
+    margin:10% auto 5% auto;
+}
+.n7 .info2{
+    margin-top:5%;
+}
+.n7 .info4,.n9 .info1{
+    margin-top:5%;
+}
+.n9 .info2{
+    margin:4% auto;
+}
+.n9 .info4{
+    position:relative;
+    top:-720px;
+}
+.n9 .info5{
+    position:relative;
+    top:-530px;
+    left:150px;
+}
+.n10 .info2{
+    margin:6% auto;
+}
+.n11 .info2,.n11 .info3{
+    margin:3% auto;
+}
+.n13 .info1{
+    margin-top: -5%;
+}
+.n13 .info2{
+    margin-top:-4%;
+}
+.n13 .info5{
+    margin-top:4%;
+}
+.arrow{
+    position:fixed;
+    z-index:100;
+    width:96px;
+    height:96px;
+    background:url(../img/up.png);
+    background-size:100%;
+    bottom:30px;
+    left:50%;
+    text-align:center;
+    margin-left:-50px;
+    animation:arrowUp 2s infinite ease-in;
+    -webkit-animation:arrowUp 2s infinite ease-in;
+}
+/*IE,firefox浏览器*/
+@keyframes arrowUp{
+    0%{transform:translateY(42px);opacity:0;}
+    60%{transform:translateY(12px);opacity:1;}
+    100%{transform:translateY(0px);opacity:0;}
+}
+/*谷歌浏览器*/
+@-webkit-keyframes arrowUp{
+    0%{transform:translateY(42px);opacity:0;}
+    60%{transform:translateY(12px);opacity:1;}
+    100%{transform:translateY(0px);opacity:0;}
+}
